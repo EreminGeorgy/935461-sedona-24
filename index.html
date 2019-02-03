@@ -28,6 +28,42 @@
     	  <section class="find-hotels">
     		  <h2>Заинтересовались?</h2>
     		  <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="hotels-search-button" type="button">поиск гостиницы в Седоне</button>
+          <section class="hotel-search-form">
+            <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <legend class="visually-hidden">Форма поиска гостиницы в Седоне</legend>
+            <ul class="staydates">
+              <li>
+                <label>дата заезда
+                  <input type="text" name="checkin-date" placeholder="24 апреля 2017">
+                  <button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>
+                </label>
+              </li>
+              <li>
+                <label>дата отъезда
+                  <input type="text" name="checkout-date" placeholder="4 июля 2017">
+                  <button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>
+                </label>
+              </li> 
+            </ul>
+            <ul class="people-number">
+              <li>
+                <label>взрослые:
+                  <button class="+-" type="button">-</button>
+                  <output class="people-number" name="adults">2</output>
+                  <button class="+-" type="button">+</button>
+                </label>
+              </li>
+              <li>
+                <label>дети:
+                  <button class="+-" type="button">-</button>
+                  <output class="people-number" name="kids">0</output>
+                  <button class="+-" type="button">+</button>
+                </label>
+              </li>
+            </ul>
+            <button class="find" type="submit">найти</button>           
+          </section>
     	  </section>
     	</main>
     	<footer class="page-footer">
