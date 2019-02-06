@@ -3,6 +3,9 @@
   	<head>
     	<meta charset="utf-8">
     	<title>HTML Academy: Седона</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
   	</head>
   	<body>
 		  <header class="page-header">
@@ -22,7 +25,7 @@
     	  <h1 class="visually-hidden">Город Седона</h1>
         <img src="img/welcome.png" width="459" height="353" alt="Добро пожаловать в Седону">
     	  <section class="features">
-    		  <h2>Седона-небольшой городок в Аризоне, заслуживающий большего</h2>
+    		  <h2>Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
     		  <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     	  </section>
     	  <section class="find-hotels">
@@ -31,38 +34,35 @@
           <button class="hotels-search-button" type="button">поиск гостиницы в Седоне</button>
           <section class="hotel-search-form">
             <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-            <legend class="visually-hidden">Форма поиска гостиницы в Седоне</legend>
-            <ul class="staydates">
-              <li>
-                <label>дата заезда
-                  <input type="text" name="checkin-date" placeholder="24 апреля 2017">
-                  <button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>
-                </label>
-              </li>
-              <li>
-                <label>дата отъезда
-                  <input type="text" name="checkout-date" placeholder="4 июля 2017">
-                  <button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>
-                </label>
-              </li> 
-            </ul>
-            <ul class="people-number">
-              <li>
-                <label>взрослые:
-                  <button class="+-" type="button">-</button>
-                  <output class="people-number" name="adults">2</output>
-                  <button class="+-" type="button">+</button>
-                </label>
-              </li>
-              <li>
-                <label>дети:
-                  <button class="+-" type="button">-</button>
-                  <output class="people-number" name="kids">0</output>
-                  <button class="+-" type="button">+</button>
-                </label>
-              </li>
-            </ul>
-            <button class="find" type="submit">найти</button>           
+              <legend class="visually-hidden">Форма поиска гостиницы в Седоне</legend>
+                <p>
+                  <label class="staydates">дата заезда
+                    <input type="text" name="checkin-date" placeholder="24 апреля 2017">
+                    <button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>
+                  </label>
+                </p>
+                <p>
+                  <label class="staydates">дата отъезда
+                    <input type="text" name="checkout-date" placeholder="4 июля 2017">
+                    <button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>
+                  </label> 
+                </p>
+                <p>
+                  <label class="people-number">взрослые:
+                    <button class="plusminus" type="button">-</button>
+                    <input type="number" class="people-number" name="adults" placeholder="2">
+                    <button class="plusminus" type="button">+</button>
+                  </label>
+                </p>
+                <p>
+                <label class="people-number">дети:
+                    <button class="plusminus" type="button">-</button>
+                    <input type="number" class="people-number" name="kids" placeholder="0">
+                    <button class="plusminus" type="button">+</button>
+                  </label>
+                </p>
+                <button class="find" type="submit">найти</button>
+            </form>           
           </section>
     	  </section>
     	</main>
