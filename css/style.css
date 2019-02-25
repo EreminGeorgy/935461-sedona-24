@@ -30,6 +30,11 @@ body {
   color: #000000;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -72,6 +77,7 @@ input[type="radio"].visually-hidden {
   display:flex;
   min-height: 55px;
   list-style: none;
+  flex-wrap: wrap;
    
 }
 
@@ -89,13 +95,17 @@ input[type="radio"].visually-hidden {
 .navigation-link {
   padding-left:72px;
   padding-top: 15px;
-  width:169px;
+  min-width:169px; 
   
 }
 
 .main-header-logo {
   width:140px;
   margin:0 47px;
+}
+
+.main-header-logo a {
+display:block;
 }
 
 .navigation-link:nth-child(n+4) {
@@ -150,6 +160,7 @@ input[type="radio"].visually-hidden {
 .features {
   padding:0;
   margin:auto;
+  background-color:white;
   }
 
 .features h2 {
@@ -181,7 +192,7 @@ margin-bottom:1199px;
 
   width:567px;
   height:86px;
-  margin-bottom:55px;
+  
 }
 
 .hotels-search-button:hover,
@@ -210,6 +221,29 @@ margin:0px;
   width:567px;
   flex-wrap:wrap;
   margin:auto;
+
+  box-shadow:  0 5px 10px 5px #dfdfdf;
+
+  display: none;
+  position:absolute;
+  left:400px;
+
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateY(-230px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.modal-show {
+  display: flex;
+  animation: swipe 0.6s;
+  animation-fill-mode: forwards;
 }
 
 p.staydates {
@@ -217,8 +251,18 @@ p.staydates {
   width:460px;
   margin:0;
   margin-left:55px;
+  margin-top:55px;
   margin-bottom:29px;
   justify-content: space-between;
+}
+
+p.finish {
+  margin-top:0px;
+}
+
+p.staydates:last-of-kind {
+  margin-top:0px;
+ 
 }
 
 .staydates label {
@@ -245,7 +289,24 @@ p.staydates {
   width:40px;
   height:38px;
   margin-left:0px;
-  background: #f2f2f2 url("../img/calendar.svg") no-repeat center center;
+  background: #f2f2f2 /*url("../img/calendar.svg") no-repeat center center;*/
+}
+
+.calendar-button path,
+.calendar-button rect{
+  fill: #cacaca;
+}
+
+.calendar-button:hover path,
+.calendar-button:focus path,
+.calendar-button:hover rect,
+.calendar-button:focus rect {
+  fill: #000000;
+}
+
+.calendar-button:active path,
+.calendar-button:active rect {
+  fill: #81b3d2;
 }
 
 p.people-number {
@@ -340,6 +401,7 @@ p.people-number {
   width:458px;
   height:58px;
   margin:auto;
+  margin-bottom: 55px;
   }
 
 .find:hover,
@@ -387,6 +449,11 @@ margin:0px;
   margin-right:31px;
 }
 
+.hotel-photo a{
+ width: 135px;
+  height: 90px;
+}
+
 .hotel-title {
   background-color: white;
   font-size: 21px;
@@ -419,13 +486,20 @@ margin:0px;
 }
 
 .hotel-type {
-  min-width: 117px;
+  min-width: 112px;
+
 }
 
 .hotel-type,
 .hotel-price {
   margin:0px;
   margin-bottom:12px;
+  background-color: white;
+}
+
+.hotel-price {
+padding-left:5px;
+background-color: white;
 }
 
 .button-info,
@@ -535,6 +609,10 @@ margin:0px;
   background-color: #5496bd;
 }
 
+.social-nets-button:hover {
+  background-color: #669ec0;
+}
+
 .social-nets-button:active path {
   fill: #88b6d1;
 }
@@ -559,12 +637,12 @@ margin:0px;
   fill:black;
 }
 
-.producer-logo svg:hodver path,
+.producer-logo svg:hover path,
 .producer-logo svg:focus path {
-fill:#81b3d2;
+  fill:#81b3d2;
 }
 
-.producer-logo svg:active path {
+  .producer-logo svg:active path {
 fill:#bdbbbc;
 }
 

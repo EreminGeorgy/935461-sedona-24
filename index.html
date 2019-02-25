@@ -18,7 +18,7 @@
                 <img src="img/logo.png" width="140" height="0px" alt="Логотип города Седона">
               </a>
             </li>
-            <li class="navigation-link"><a href="#statemap">Карта штата</a></li>
+            <li class="navigation-link"><a href="#statemap" >Карта штата</a></li>
             <li class="navigation-link"><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
@@ -40,20 +40,106 @@
         <section class="hotel-search-form">
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <legend class="visually-hidden">Форма поиска гостиницы в Седоне</legend>
-              <p class="staydates">
+              <p class="staydates start">
                 <label for="checkin-date">дата заезда:</label>
-                <input type="text" name="checkin-date" placeholder="24 апреля 2017">
-                <button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>
+                <input type="text" name="checkin-date" placeholder="24 апреля 2017" required>
+              <!--<button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button> -->
+                <span class="calendar-button">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px"
+                     width="40px" height="38px" viewBox="-10 -8 40 38" enable-background="new 0 0 21 22" xml:space="preserve">
+                  <g id="calendar_1_">
+                    <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+                      c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+                      c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+                      C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+                      c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+                      c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+                      v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                    <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+                    <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+                    <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="13.781" y="8.225" wi="11.668" width="2.625" height="2.067"/>
+                    <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+                  </g>
+                  <g id="calendar_1_">
+                    <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+                      c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+                      c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+                      C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+                      c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+                      c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+                      v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                    <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+                    <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+                    <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="13.781" y="8.225" wi="11.668" width="2.625" height="2.067"/>
+                    <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+                  </g>
+                  </svg>
+                </span> 
               </p>
-              <p class="staydates">
+              <p class="staydates finish">
                 <label for="checkout-date">дата отъезда:</label>
-                <input type="text" name="checkout-date" placeholder="4 июля 2017">
-                <button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>
+                <input type="text" name="checkout-date" placeholder="4 июля 2017" required>
+                <!--<button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>-->
+                <span class="calendar-button">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px"
+                     width="40px" height="38px" viewBox="-10 -8 40 38" enable-background="new 0 0 21 22" xml:space="preserve">
+                  <g id="calendar_1_">
+                    <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+                      c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+                      c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+                      C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+                      c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+                      c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+                      v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                    <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+                    <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+                    <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="13.781" y="8.225" wi="11.668" width="2.625" height="2.067"/>
+                    <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+                  </g>
+                  <g id="calendar_1_">
+                    <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+                      c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+                      c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+                      C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+                      c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+                      c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+                      v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                    <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+                    <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+                    <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+                    <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+                    <rect x="13.781" y="8.225" wi="11.668" width="2.625" height="2.067"/>
+                    <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+                    </g>
+                  </svg>
+                </span>
               </p>
               <p class="people-number">
                 <label for="adults">взрослые:</label>
                 <button class="plusminus" type="button">-</button>
-                <input type="text" name="adults" placeholder="2">
+                <input type="text" name="adults" placeholder="2" required>
                 <button class="plusminus" type="button">+</button>
               </p>
               <p class="people-number form-end">
@@ -64,6 +150,10 @@
               </p>
               <button class="find" type="submit">найти</button>
             </form>           
+          </section>
+          <section class="map">
+            <h2 class="visually-hidden">Карта Седоны и окрестностей</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838157.8233323478!2d-112.35549465634531!3d34.854870517245025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1551036997290" width="1200" height="474" frameborder="0" style="border:0" allowfullscreen></iframe>
           </section>
         </main>
       <footer class="page-footer">
@@ -114,5 +204,62 @@
           </svg>
         </a>
       </footer>
+      <script>
+        var button = document.querySelector(".hotels-search-button");
+        var popup = document.querySelector(".filter");
+        var date1 = popup.querySelector("[name=checkin-date]");
+        var date2 = popup.querySelector("[name=checkout-date]");
+        var ad = popup.querySelector("[name=adults]");
+        var storage = localStorage.getItem("date1");
+        var storage2 = localStorage.getItem("date2");
+        var isStorageSupport = true;
+        var storage = "";
+  
+        try {
+          storage = localStorage.getItem("date1");
+          storage2 = localStorage.getItem("date2");
+        } catch (err) {
+          isStorageSupport = false;
+        }
+        
+        console.log();
+
+        button.addEventListener("click", function (evt) {
+          evt.preventDefault();
+          popup.classList.toggle("modal-show");
+          date1.focus();
+          if (storage) {
+            date1.value = storage;
+            date2.focus();
+            } else {
+              date1.focus();
+            }
+          if (storage2) {
+            date2.value = storage2;
+            ad.focus();
+            } else {
+              date2.focus();
+            }
+        });
+
+        popup.addEventListener("submit", function (evt) {
+         if (isStorageSupport) {
+          localStorage.setItem("date1", date1.value);
+          localStorage.setItem("date2", date2.value);
+          }
+        });
+
+        window.addEventListener("keydown",function(evt) {
+          if (evt.keyCode === 27) {
+            if (popup.classList.contains("modal-show")) {
+              evt.preventDefault();
+              popup.classList.remove("modal-show");
+            }
+          }
+        }
+
+          )
+        
+      </script>
     </body>
 </html>
