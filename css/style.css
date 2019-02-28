@@ -207,10 +207,14 @@ margin-bottom:1199px;
 
 .hotel-search-form {
 margin:0px;
+position: relative; 
 
 }
 
 .filter {
+  overflow-y: hidden;
+  max-height: 0;
+
   background-color: white;
   font-size: 14px;
   line-height: 26px;
@@ -224,19 +228,22 @@ margin:0px;
 
   box-shadow:  0 5px 10px 5px #dfdfdf;
 
-  /*display: none;*/
+  display: none;
   position:absolute;
-  left:400px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*z-index:-1;*/
 
 }
 
 @keyframes swipe {
   0% {
-    transform: translateY(-230px);
+    opacity: 0;
   }
 
   100% {
-    transform: translateY(0px);
+    max-height: 394px;
+    opacity: 1;
   }
 }
 

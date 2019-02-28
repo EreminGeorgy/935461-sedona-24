@@ -39,10 +39,10 @@
         </section>
         <section class="hotel-search-form">
           <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-            <legend class="visually-hidden">Форма поиска гостиницы в Седоне</legend>
+            <h3 class="visually-hidden">Форма поиска гостиницы в Седоне</h3>
               <p class="staydates start">
                 <label for="checkin-date">дата заезда:</label>
-                <input type="text" name="checkin-date" placeholder="24 апреля 2017" required>
+                <input type="text" name="checkin-date" id="checkin-date" placeholder="24 апреля 2017" required>
               <!--<button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button> -->
                 <span class="calendar-button">
                   <svg version="1.1" id="Layer_8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px"
@@ -88,7 +88,7 @@
               </p>
               <p class="staydates finish">
                 <label for="checkout-date">дата отъезда:</label>
-                <input type="text" name="checkout-date" placeholder="4 июля 2017" required>
+                <input type="text" name="checkout-date" id="checkout-date" placeholder="4 июля 2017" required>
                 <!--<button class="calendar-button" type="button" aria-label="Выбор даты в календаре"></button>-->
                 <span class="calendar-button">
                   <svg version="1.1" id="Layer_9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px"
@@ -135,13 +135,13 @@
               <p class="people-number">
                 <label for="adults">взрослые:</label>
                 <button class="plusminus" type="button">-</button>
-                <input type="text" name="adults" placeholder="2" required>
+                <input type="text" name="adults" id="adults" placeholder="2" required>
                 <button class="plusminus" type="button">+</button>
               </p>
               <p class="people-number form-end">
               <label for="kids" >дети:</label>
                 <button class="plusminus" type="button">-</button>
-                <input type="text" name="kids" placeholder="0">
+                <input type="text" name="kids" id="kids" placeholder="0">
                 <button class="plusminus" type="button">+</button>
               </p>
               <button class="find" type="submit">найти</button>
