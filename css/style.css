@@ -739,7 +739,9 @@ margin:0px;
   font-size: 12px;
   line-height: 18px;
 }
+
 .sort {
+  display: flex;
   margin-left:46px;
 }
 
