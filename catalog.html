@@ -5,26 +5,111 @@
     	<title>HTML Academy: Седона</title>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/style.min.css" rel="stylesheet">
   	</head>
   	<body class="inner-page">
 		  <header class="page-header">
+        <a class="main-header-logo">
+          <img src="img/logo.png" width="0" height="0" alt="Логотип города Седона">
+        </a>
         <nav class="main-menu">
           <ul class="navigation">
             <li class="navigation-link"><a href="#info">Информация</a></li>
             <li class="navigation-link"><a href="#media">Фото и видео</a></li>
-            <li class="main-header-logo">
-              <a href="index.html">            
-                <img src="img/logo.png" width="140" height="54" alt="Логотип города Седона">
-              </a>
-            </li>
-            <li class="navigation-link"><a href="#statemap">Карта штата</a></li>
-            <li class="navigation-link"><a href="catalog.html">Гостиницы</a></li>
+            <li class="navigation-link"><a href="#statemap" >Карта штата</a></li>
+            <li class="navigation-link-current">Гостиницы</li>
           </ul>
         </nav>
       </header>
     	<main class="container">
     	  <h1 class="visually-hidden">Выбор гостиниц</h1>
+        <section class="filters">
+          <h2 class="visually-hidden">Форма поиска отеля в Седоне</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-block">
+              <legend class="filter-name">Инфраструктура:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="swimming-pull" id="swimming-pull" checked>
+                  <label for="swimming-pull">Бассейн</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking" >
+                  <label for="parking">Парковка</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+                  <label for="wi-fi">WI-FI</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-block">
+              <legend class="filter-name">Тип жилья:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Гостиница</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
+                  <label for="motel">Мотель</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="filter-range">
+              <h3 class="filter-range-title">Стоимость в сутки (р):</h3>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </div>
+          </form>
+        </section>
+        <section class="found">
+          <span>Найдено: 3</span>
+          <p class="sort">
+            <span>сортировка:</span>
+            <ul class="sort-options">
+              <li class="option-current">
+                <a>По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По рейтингу</a>
+              </li>
+            </ul>
+          </p>
+          <ul class="triangles">
+            <li>
+              <a href="#" class="updown">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10"  xml:space="preserve">
+                <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "/>
+                </svg>
+              </a>
+            </li>
+            <li class="updown-active">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+              <polygon fill="#cacaca" points="5.5,10 0,0 11,0 "/>
+              </svg>
+            </li>
+          </ul>
+        </section>
     	  <section class="catalog">
     		  <h2 class="visually-hidden">Список гостиниц</h2>
 			    <ul class="hotels-list">
