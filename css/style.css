@@ -16,6 +16,15 @@ body {
     background-color: white;
     background-image: none;
     line-height: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.inner-page .page-footer {
+    margin-top: auto;
 }
 
 a {
@@ -70,9 +79,6 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 140px;
     height: 71px;
-    background-image: url("../img/logo.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
     right: 50%;
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
@@ -122,6 +128,7 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-link-current {
+    min-width: 169px;
     color: #766357;
     padding-left: 0px;
     padding-right: 70px;
@@ -139,9 +146,9 @@ input[type="radio"].visually-hidden {
 }
 
 .banner {
-    background-color:darkblue;
-    background: url("../img/background-photo.jpg") no-repeat top center;
-    margin-top:-55px;
+    background-color:#243843;
+    background: url("../img/background-photo.jpg") no-repeat top -55px center;
+    /*margin-top:-55px;*/
     background-size: 1200px auto; 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,22 +163,19 @@ input[type="radio"].visually-hidden {
     height:352px;
     margin: auto;
     margin-top: 132px;
-    margin-bottom: 130px;
     position:relative;
 }
 
 .banner::after {
     content: "";
     position: absolute;
-    bottom:-34px;
-    left: 50%;
+    bottom:-2px;
+    left: 0;
     width: 1200px;
-    height: 60px;
+    height: 59px;
     background-color: #ffffff;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background: url("../img/background-mask.svg") no-repeat center top;
+    background: url("../img/background-mask.svg") no-repeat center bottom;
+    z-index: 2;
 }
 
 .features {
@@ -359,6 +363,12 @@ li .real-town-item:nth-child(3) {
 .map {
     height: 593px;
     background: url("../img/map.jpg") no-repeat center top;
+    margin-bottom:-120px;
+}
+
+.map-frame {
+    height: 473px;
+    width: 1200px;
 }
 
 .date-form {
@@ -758,9 +768,10 @@ p.people-number {
     left: 0px;
     height: 23px;
     width: 25px;
-    background-image: url("../img/checkbox-on.png");
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size:cover;
 }
 
 .filter-input-checkbox:not(:checked):focus + label::before {
@@ -772,7 +783,7 @@ p.people-number {
     height: 19px;
     border-radius: 4px;
     border: 2px solid #ffffff;
-    outline: 2px solid blue;
+    outline: 1px dashed #ffffff;
 
 }
 
@@ -783,10 +794,11 @@ p.people-number {
     left: 0px;
     height: 23px;
     width: 25px;
-    background-image: url("../img/checkbox-on.png");
+    background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    outline: 2px solid blue;
+    outline: 1px dashed #ffffff;
+    background-size:cover;
 }
 
 .filter-range {
@@ -827,7 +839,8 @@ p.people-number {
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 21px;
+    padding-top:6px;
     vertical-align: top;
 }
 
@@ -844,6 +857,8 @@ p.people-number {
     font: inherit;
     background: none;
     border: none;
+    font-size: 14px;
+    line-height: 21px;
 }
 
 .range-controls {
@@ -1149,8 +1164,8 @@ p.people-number {
     display: -ms-flexbox;
     display: flex;
     background-color: rgba(253, 253, 253, 0.9);
-    overflow-y: hidden;
-    margin-top:-120px;
+    margin-top:0px;
+    overflow: hidden;
 }
 
 .hashtag {

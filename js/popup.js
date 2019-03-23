@@ -16,20 +16,14 @@ if (isStorageSupport) {
 var storage = localStorage.getItem("date1");
 var storage2 = localStorage.getItem("date2");}
 
+popup.classList.add("modal-show");
 
-date1.focus();
 if (storage) {
   date1.value = storage;
-  date2.focus();
-  } else {
-    date1.focus();
   }
 if (storage2) {
   date2.value = storage2;
-  ad.focus();
-  } else {
-    date2.focus();
-  }
+  } 
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
