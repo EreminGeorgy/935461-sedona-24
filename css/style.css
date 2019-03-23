@@ -106,7 +106,8 @@ input[type="radio"].visually-hidden {
 .navigation-link {
     padding-left: 72px;
     padding-top: 15px;
-    min-width: 169px;
+    width: 169px;
+    word-wrap: break-word;
 }
 
 .navigation-link:nth-child(3) {
@@ -148,12 +149,11 @@ input[type="radio"].visually-hidden {
 .banner {
     background-color:#243843;
     background: url("../img/background-photo.jpg") no-repeat top -55px center;
-    /*margin-top:-55px;*/
     background-size: 1200px auto; 
     display: -webkit-box;
     display: -ms-flexbox;
     display:flex;
-    height:565px;
+    height:510px;
     position:relative;
 }
 
@@ -162,7 +162,7 @@ input[type="radio"].visually-hidden {
     width: 459px;
     height:352px;
     margin: auto;
-    margin-top: 132px;
+    margin-top: 77px;
     position:relative;
 }
 
@@ -187,7 +187,7 @@ input[type="radio"].visually-hidden {
 .features h2 {
     margin-top:0px;
     padding-top:58px;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     font-size: 21px;
     line-height: 26px;
     color: #000000;
@@ -195,7 +195,7 @@ input[type="radio"].visually-hidden {
 }
 
 .explanation {
-    margin-bottom: 53px;
+    margin-bottom: 51px;
 }
 
 .features-list {
@@ -237,7 +237,7 @@ input[type="radio"].visually-hidden {
     padding-top: 161px;
     font-size: 21px;
     line-height: 21px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
 }
 
 .features-list p {
@@ -254,7 +254,7 @@ li .real-town-item {
     background-image: url("../img/house.svg");
     background-repeat: no-repeat;
     background-position: 50% 60px;
-    height: 331px;
+    height: 330px;
 }
 
 li .real-town-item:nth-child(2) {
@@ -504,7 +504,7 @@ p.stay-dates {
     display: flex;
     width: 460px;
     margin: 0;
-    margin-left: 55px;
+    margin-left: 54px;
     margin-top: 55px;
     margin-bottom: 29px;
     -webkit-box-pack: justify;
@@ -647,7 +647,7 @@ p.people-number {
     text-transform: uppercase;
     background-color: #f2f2f2;
     border: none;
-    width: 40px;
+    width: 39px;
     height: 38px;
 }
 
@@ -713,7 +713,7 @@ p.people-number {
     padding: 0;
     margin-top: 28px;
     margin-left: 73px;
-    margin-right: 43px;
+    margin-right: 44px;
     border: none;
 }
 
@@ -815,7 +815,7 @@ p.people-number {
 }
 
 .price-controls {
-    height: 36px;
+    height: 33px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -907,7 +907,7 @@ p.people-number {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 34px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -1037,7 +1037,7 @@ p.people-number {
     margin-left: 73px;
     margin-top: 30px;
     margin-right: 29px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .hotel-photo a {
@@ -1051,8 +1051,8 @@ p.people-number {
     color: #000000;
     font-weight: 700;
     display: block;
-    margin-top: 26px;
-    margin-bottom: 12px;
+    margin-top: 28px;
+    margin-bottom: 10px;
     max-width: 500px;
 }
 
@@ -1085,7 +1085,7 @@ p.people-number {
 .hotel-type,
 .hotel-price {
     margin: 0px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     background-color: white;
 }
 
@@ -1097,7 +1097,7 @@ p.people-number {
 .button-info,
 .button-book {
     display: inline-block;
-    padding: 4px 17px;
+    padding: 3px 17px;
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
@@ -1139,18 +1139,15 @@ p.people-number {
 .hotel-raiting {
     color: #666666;
     background-color: #f2f2f2;
+    margin: 0px;
+    padding: 4px 12px;
 }
 
 .hotel-stars {
     margin: 0px;
     margin-top: 31px;
-    margin-bottom: 47px;
+    margin-bottom: 44px;
     text-align: right;
-}
-
-.hotel-raiting {
-    margin: 0px;
-    padding: 4px 15px;
 }
 
 .page-footer {
