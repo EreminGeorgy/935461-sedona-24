@@ -16,7 +16,7 @@ if (isStorageSupport) {
 var storage = localStorage.getItem("date1");
 var storage2 = localStorage.getItem("date2");}
 
-popup.classList.add("modal-show");
+popup.classList.remove("modal-show");
 
 if (storage) {
   date1.value = storage;

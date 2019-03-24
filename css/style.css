@@ -486,9 +486,9 @@ li .real-town-item:nth-child(3) {
     display: -ms-flexbox;
     display: flex;
     -webkit-animation: swipe 0.6s;
-    animation: swipe 0.6s;
+            animation: swipe 0.6s;
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .modal-error {
